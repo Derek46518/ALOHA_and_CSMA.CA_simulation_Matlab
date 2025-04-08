@@ -80,10 +80,10 @@ tau = 2./(1+CW+CW*p.*sum((2*P).^(i')));
 tau2 = 1-(1-p).^(1/(n-1)); 
 
 figure(3)
-plot(p,tau, p, tau2)
+plot(p,tau,p,tau2)
 axis([0 1 0 0.2]);
-xlabel('collision probability p');
-ylabel('transmission probability $\tau$','Interpreter','latex');
+ylabel('collision probability tau');
+xlabel('transmission probability p');
 title('Unique solution for p and $\tau$ with CW=32 and m=3','Interpreter','latex');
 
 
